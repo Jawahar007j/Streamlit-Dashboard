@@ -108,7 +108,17 @@ streamlit run streamlit.st.py
 ```
 
 ---
+## Dashboard Highlights
 
+- **103,024** total ride records analysed (July 2024)
+- **63,967** successful rides — 62% booking success rate
+- **Prime Sedan** highest total booking value — ₹5,224,050
+- **Cash** dominates payment — ₹19,260,316 vs Credit Card ₹1,312,793
+- Cancellation breakdown: Driver cancellations (2,500–2,700) 
+  consistently exceed customer cancellations (1,470–1,537) 
+  across all vehicle types
+- Interactive filters: Vehicle type, booking status, 
+  payment method, date range
 ## Connect
 
 [LinkedIn](https://linkedin.com/in/jawahar-ranganathan) | [GitHub](https://github.com/Jawahar007j)
