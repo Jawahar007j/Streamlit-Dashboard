@@ -1,41 +1,52 @@
-OLA Ride Analytics Dashboard
+# OLA Ride Analytics Dashboard
+**Tools:** Python (Pandas) | SQL (MySQL) | Streamlit | Power BI  
+**Domain:** Operations Analytics | Ride-Hailing | Business Intelligence  
+**Dataset:** OLA ride bookings dataset — vehicle types, booking status, cancellations, ratings, payment methods
 
-Tools: Python (Pandas) | SQL (MySQL) | Streamlit | Power BI
+---
 
-Domain: Operations Analytics | Ride-Hailing | Business Intelligence
-
-Dataset: OLA ride bookings dataset — vehicle types, booking status, cancellations, ratings, payment methods
-
-
-🚀 Live Dashboard
-
-👉 Click here to view the live Streamlit app
+## 🚀 Live Dashboard
 👉 [**Click here to view the live Streamlit app**](https://app-dashboard-kj7p97d8kzfmfu5agcpz5t.streamlit.app/)
 
+---
 
-Project Overview
+## Project Overview
 
 An end-to-end operations analytics project on OLA ride booking data — combining SQL-based data extraction, Python-powered data processing, and interactive dashboard deployment via Streamlit. The project answers key business questions around ride performance, cancellation patterns, vehicle utilisation, and payment behaviour.
 
+---
 
-Business Questions Answered
+## Business Questions Answered
 
-#Business QuestionMethod1Which vehicle type covers the most ride distance?SQL + Aggregation2Total rides per vehicle typeSQL + GROUP BY3What are the top reasons customers cancel rides?SQL + ORDER BY4Who are the top 5 most frequent customers?SQL + LIMIT5Average ride distance by vehicle typeSQL + AVG6Cancellations due to personal/car-related issuesSQL + WHERE filter7Max and min driver ratings for Prime SedanSQL + IN clause8Total booking value via UPI paymentsSQL + SUM + filter9Average customer rating per vehicle typeSQL + AVG + GROUP BY10Total revenue from successful ridesSQL + SUM + filter11Incomplete rides breakdown by reasonSQL + GROUP BY + ORDER BY
+| # | Business Question | Method |
+|---|---|---|
+| 1 | Which vehicle type covers the most ride distance? | SQL + Aggregation |
+| 2 | Total rides per vehicle type | SQL + GROUP BY |
+| 3 | What are the top reasons customers cancel rides? | SQL + ORDER BY |
+| 4 | Who are the top 5 most frequent customers? | SQL + LIMIT |
+| 5 | Average ride distance by vehicle type | SQL + AVG |
+| 6 | Cancellations due to personal/car-related issues | SQL + WHERE filter |
+| 7 | Max and min driver ratings for Prime Sedan | SQL + IN clause |
+| 8 | Total booking value via UPI payments | SQL + SUM + filter |
+| 9 | Average customer rating per vehicle type | SQL + AVG + GROUP BY |
+| 10 | Total revenue from successful rides | SQL + SUM + filter |
+| 11 | Incomplete rides breakdown by reason | SQL + GROUP BY + ORDER BY |
 
+---
 
-Key Features
+## Key Features
 
+- **File Upload Support** — users can upload their own dataset (xlsx) for instant analysis
+- **Pivot Table Analysis** — vehicle type vs booking status cross-tabulation
+- **Interactive Streamlit UI** — accessible to non-technical users without SQL or Python knowledge
+- **Power BI Dashboard** — complementary visual report built in Power BI with multi-page layout
 
-File Upload Support — users can upload their own dataset (xlsx) for instant analysis
-Pivot Table Analysis — vehicle type vs booking status cross-tabulation
-Interactive Streamlit UI — accessible to non-technical users without SQL or Python knowledge
-Power BI Dashboard — complementary visual report built in Power BI with multi-page layout
+---
 
+## SQL Highlights
 
-
-SQL Highlights
-
-sql-- Top 5 customers by ride count
+```sql
+-- Top 5 customers by ride count
 SELECT Customer_ID, COUNT(*) AS total_rides
 FROM oladataset
 GROUP BY Customer_ID
@@ -54,21 +65,38 @@ FROM oladataset
 WHERE Incomplete_Rides_Reason <> 'null'
 GROUP BY Incomplete_Rides_Reason
 ORDER BY rides_count DESC;
+```
 
+---
 
-Tech Stack
+## Tech Stack
 
-LayerToolData ExtractionSQL (MySQL)Data ProcessingPython — PandasDashboard AppStreamlitBI ReportingPower BI (Power Query)Data SourceExcel (.xlsx)
+| Layer | Tool |
+|---|---|
+| Data Extraction | SQL (MySQL) |
+| Data Processing | Python — Pandas |
+| Dashboard App | Streamlit |
+| BI Reporting | Power BI (Power Query) |
+| Data Source | Excel (.xlsx) |
 
+---
 
-Files in This Repo
+## Files in This Repo
 
-FileDescriptionstreamlit.st.pyMain Streamlit dashboard applicationOLA_DataSet.xlsxSource datasetrequirements.txtPython dependenciesSQL QUERIES.docxAll 11 SQL queries with business contextPROJECT 3 - POWER QUERY QUESTIONS.pbixPower BI report file
+| File | Description |
+|---|---|
+| `streamlit.st.py` | Main Streamlit dashboard application |
+| `OLA_DataSet.xlsx` | Source dataset |
+| `requirements.txt` | Python dependencies |
+| `SQL QUERIES.docx` | All 11 SQL queries with business context |
+| `PROJECT 3 - POWER QUERY QUESTIONS.pbix` | Power BI report file |
 
+---
 
-How to Run Locally
+## How to Run Locally
 
-bash# Clone the repo
+```bash
+# Clone the repo
 git clone https://github.com/Jawahar007j/Streamlit-Dashboard.git
 cd Streamlit-Dashboard
 
@@ -77,3 +105,10 @@ pip install -r requirements.txt
 
 # Run the app
 streamlit run streamlit.st.py
+```
+
+---
+
+## Connect
+
+[LinkedIn](https://linkedin.com/in/jawahar-ranganathan) | [GitHub](https://github.com/Jawahar007j)
