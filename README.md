@@ -10,6 +10,7 @@ Dataset: OLA ride bookings dataset — vehicle types, booking status, cancellati
 🚀 Live Dashboard
 
 👉 Click here to view the live Streamlit app
+👉 [**Click here to view the live Streamlit app**](https://app-dashboard-kj7p97d8kzfmfu5agcpz5t.streamlit.app/)
 
 
 Project Overview
